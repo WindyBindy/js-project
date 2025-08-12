@@ -14,6 +14,7 @@
   "devDependencies": {
     "glob": "^8.1.0",
     "sass": "^1.90.0",
+    "scss": "^0.2.4",
     "vite": "^4.5.2"
   },
   "author": " <@gmail.com>",
