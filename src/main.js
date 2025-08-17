@@ -1,0 +1,12 @@
+import "./js/header";
+import "./js/age";
+import "./js/random-number";
+import "./js/sisers-paper-rock";
+import "./js/calculator";
+import "./js/time.calculater";
+import "./js/dinosaur";
+import "./js/football";
+import "./js/three-nums";
+import "./js/team";
+import "./js/smart-people";
+import "./js/footer";
