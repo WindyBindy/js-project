@@ -12,13 +12,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/Vite_vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-860825f2.css">
+    <link rel="stylesheet" href="/Vite_vanilla-app-template/assets/index-05500825.css">
   </head>
   <body>
     <header class="header">
-  <img src="" alt="icon" class="header__icon" />
+  <div class="header__logo">
+    <img src="../img/logo-header.png" alt="icon" class="header__logo__img" />
+    <p class="logo__text">Coding</p>
+    <p class="logo__magic__text">Magic</p>
+  </div>
   <nav class="header__nav">
     <ul class="header__list">
       <li class="header__item">
@@ -34,7 +50,11 @@
   </nav>
   <ul class="header__list__right">
     <li class="header__item__right">
-      <div class="theme__changer"><div class="header__cyrcle"></div></div>
+      <div class="theme__changer">
+        <div class="header__cyrcle">
+          <img src="../img/sun-bg-changer.png" alt="" />
+        </div>
+      </div>
     </li>
     <li class="header__item__right">
       <p class="header__hello">Вітаємо, User!</p>
@@ -43,9 +63,43 @@
 </header>
 
     
+    <section class="randomnumber">
+  <div class="randomnumber__input">
+    <input type="text" placeholder="Введіть число" />
+    <img src="" alt="icon" />
+  </div>
+  <p class="randomnumber__output">Вітаю, ви вгадали число! (number)</p>
+</section>
+
     
-    
-    
+    <section class="calculator">
+  <h2 class="calculator__title">Калькулятор</h2>
+  <ul class="calculator__list">
+    <li class="calculator__item">
+      <input
+        type="text"
+        placeholder="Введіть число"
+        class="calculator__input"
+      />
+    </li>
+    <li class="calculator__item">
+      <button class="calculator__btn" type="button">+</button>
+      <button class="calculator__btn" type="button">*</button>
+      <button class="calculator__btn" type="button">-</button>
+      <button class="calculator__btn" type="button">/</button>
+    </li>
+    <li class="calculator__item">
+      <input type="text" class="calculator__num" placeholder="Введіть число" />
+    </li>
+    <li class="calculator__item">
+      <button class="calculator__output__btn" type="button">=</button>
+    </li>
+    <li class="calculator__item">
+      <input type="text" class="calculator__output" placeholder="Результат" />
+    </li>
+  </ul>
+</section>
+
     
     
     
