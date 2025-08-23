@@ -61,3 +61,5 @@ document.querySelectorAll(".questions__item").forEach((btn, i) => {
     render(result);
   });
 });
+
+
