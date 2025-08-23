@@ -1,0 +1,76 @@
+.randomnumber {
+  &__title {
+    color: #000;
+    font-family: 'Montserrat Alternates';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    gap: 36px;
+  }
+  &__input__output {
+    display: flex;
+    gap: 202px;
+
+    align-items: center;
+  }
+  &__output {
+    color: #039900;
+    text-align: right;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    //Вітаю, ви вгадали число! (number)
+  }
+  &__output__incorrect {
+    color: #900;
+    text-align: right;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    //Ви програли, комп’ютер загадав (number)
+  }
+  &__input {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background: #d7d7d7;
+    width: 115px;
+    height: 35px;
+    border: none;
+    padding-left: 10px;
+  }
+  &__input::placeholder {
+    color: #7e7e7e;
+    font-family: 'Montserrat Alternates';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__input__div {
+    display: flex;
+    align-items: center;
+  }
+  &__icon__css {
+    border-radius: 0 20px 20px 0;
+    background: #000;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+// 115
