@@ -128,35 +128,34 @@
     
     <section class="smart">
   <div class="container">
-  <div class="section-box">
     <h2 class="smart__title">Обери вченого/их</h2>
-
+    
     <ul class="smart__grid">
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
-      <li class="smart__card"></li>
+      <li class="smart__card">Альберт Ейнштейн (1879–1955)</li>
+      <li class="smart__card">Ісаак Ньютон (1643–1727)</li>
+      <li class="smart__card">Марія Кюрі (1867–1934)</li>
+      <li class="smart__card">Галілео Галілей (1564–1642)</li>
+      <li class="smart__card">Чарльз Дарвін (1809–1882)</li>
+      <li class="smart__card">Нікола Тесла (1856–1943)</li>
+      <li class="smart__card">Дмитро Менделєєв (1834–1907)</li>
+      <li class="smart__card">Стівен Гокінг (1942–2018)</li>
+      <li class="smart__card">Андрій Сахаров (1921–1989)</li>
+      <li class="smart__card">Юрій Кондратюк (1897–1942)</li>
+      <li class="smart__card">Іван Пулюй (1845–1918)</li>
+      <li class="smart__card">Борис Патон (1918–2020)</li>
     </ul>
 
-      <div class="smart__questions">
-        <button class="questions__item">Які вчені народилися в 19 ст.</button>
-        <button class="questions__item">Знайти рік народження Albert Einshtein</button>
-        <button class="questions__item">Відсортувати вчених за алфавітом</button>
-        <button class="questions__item">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
-        <button class="questions__item">Відсортувати вчених за кількістю прожитих років</button>
-        <button class="questions__item">Видалити всіх вчених, ім’я яких починається на “А”</button>
-        <button class="questions__item">Знайти вченого, який народився найпізніше</button>
-        <button class="questions__item">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button>
-        <button class="questions__item">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
-      </div>
+    <div class="smart__questions">
+      <button class="questions__item">Які вчені народилися в 19 ст.</button>
+      <button class="questions__item">Знайти рік народження Альберта Ейнштейна</button>
+      <button class="questions__item">Відсортувати вчених за алфавітом</button>
+      <button class="questions__item">Знайти вчених, прізвища яких починаються на літеру “С”</button>
+      <button class="questions__item">Відсортувати вчених за кількістю прожитих років</button>
+      <button class="questions__item">Видалити всіх вчених, ім’я яких починається на “А”</button>
+      <button class="questions__item">Знайти вченого, який народився найпізніше</button>
+      <button class="questions__item">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button>
+      <button class="questions__item">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+    </div>
   </div>
 </section>
     <footer class="footer">
@@ -172,19 +171,19 @@
     <a href="mailto:codingmagic@gmail.com" class="footer__link">E-Mail: codingmagic@gmail.com</a>
 </li>
 <li class="footer__item">
-    <a href="https://www.facebook.com/CodingMagic" target="_blank" class="footer__link">Facebook: CodingMagic</a>
+    <a href="https://www.facebook.com/" target="_blank" class="footer__link">Facebook: CodingMagic</a>
 </li>
 <li class="footer__item">
-    <a href="https://twitter.com/CodingMagic" target="_blank" class="footer__link">Twitter: CodingMagic</a>
+    <a href="https://x.com/" target="_blank" class="footer__link">Twitter: CodingMagic</a>
 </li>
 <li class="footer__item">
-    <a href="https://www.instagram.com/CodingMagic" target="_blank" class="footer__link">Instagram: CodingMagic</a>
+    <a href="https://www.instagram.com/" target="_blank" class="footer__link">Instagram: CodingMagic</a>
 </li>
 </ul>
 <div class="box">
     <form class="footer__form">
         <input type="email" class="footer__input" placeholder="Ваша ел. адреса..." required>
-         <button type="button" class="footer__btn">Підписатись</button>
+         <button type="button" class="footer__btn" data-modal-footer-open>Підписатись</button>
     </form>
 <p class="footer__subtitle">*Підписавшись, Ви зможете отримувати інформацію про новинки на сайті</p>
 </div>
@@ -194,9 +193,9 @@
 
 
 
-   <div class="backdrop is-hidden">
+   <div class="backdrop is-hidden" data-modal-footer>
       <div class="footer__modal">
-         <button class="modal__btn"><img src="/src/img/mykola-imgs/close.png" alt="close"></button>
+         <button class="modal__btn" data-modal-footer-close><img src="/src/img/mykola-imgs/close.png" alt="close"></button>
         <h2 class="footer__title">Дякую за підписку!</h2>
         <img src="/src/img/mykola-imgs/sword.png" class="modal__icons" alt="sword">
         <img src="/src/img/mykola-imgs/game.png" class="modal__icons" alt="game">
