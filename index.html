@@ -26,7 +26,7 @@
     />
     
     <script type="module" crossorigin src="/js-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-project/assets/index-a999acf2.css">
+    <link rel="stylesheet" href="/js-project/assets/index-8cd12512.css">
   </head>
   <body>
     <header class="header">
@@ -89,31 +89,43 @@
 
     
     <section class="calculator">
-  <h2 class="calculator__title">Калькулятор</h2>
-  <ul class="calculator__list">
-    <li class="calculator__item">
-      <input
-        type="text"
-        placeholder="Введіть число"
-        class="calculator__input"
-      />
-    </li>
-    <li class="calculator__item">
-      <button class="calculator__btn" type="button">+</button>
-      <button class="calculator__btn" type="button">*</button>
-      <button class="calculator__btn" type="button">-</button>
-      <button class="calculator__btn" type="button">/</button>
-    </li>
-    <li class="calculator__item">
-      <input type="text" class="calculator__num" placeholder="Введіть число" />
-    </li>
-    <li class="calculator__item">
-      <button class="calculator__output__btn" type="button">=</button>
-    </li>
-    <li class="calculator__item">
-      <input type="text" class="calculator__output" placeholder="Результат" />
-    </li>
-  </ul>
+  <div class="container calculator__box">
+    <h2 class="calculator__title">Калькулятор</h2>
+    <ul class="calculator__list">
+      <li class="calculator__item">
+        <input
+          type="text"
+          placeholder="Введіть число"
+          class="calculator__input"
+        />
+      </li>
+      <li class="calculator__item calculator__button__list">
+        <div class="test-css">
+          <button class="calculator__btn" type="button">+</button>
+          <button class="calculator__btn" type="button">*</button>
+        </div>
+        <div class="test-css">
+          <button class="calculator__btn" type="button">-</button>
+          <button class="calculator__btn" type="button">/</button>
+        </div>
+      </li>
+      <li class="calculator__item">
+        <input
+          type="text"
+          class="calculator__num"
+          placeholder="Введіть число"
+        />
+      </li>
+      <li class="calculator__item">
+        <button class="calculator__output__btn" type="button">=</button>
+      </li>
+      <li class="calculator__item">
+        <div class="calculator__box__output">
+          <p class="calculator__output">Результат</p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
     
