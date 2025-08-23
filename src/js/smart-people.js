@@ -13,6 +13,7 @@ const scientists = [
   { name: "Олександр", surname: "Флемінг", years: "1881–1955" }
 ];
 
+
 const grid = document.querySelector(".smart__grid");
 function render(list) {
   grid.innerHTML = "";
@@ -25,46 +26,36 @@ function render(list) {
 }
 render(scientists);
 
+
 document.querySelectorAll(".questions__item").forEach((btn, i) => {
   btn.addEventListener("click", () => {
     let result = [...scientists];
-    if (i === 0) { 
+    if (i === 0) {
       result = scientists.filter(scientist => parseInt(scientist.years) >= 1801 && parseInt(scientist.years) <= 1900);
     }
-    if (i === 1) { 
+    if (i === 1) {
       alert("Albert Einstein: 1879");
       return;
     }
-    if (i === 2) { 
+    if (i === 2) {
       result.sort((a,b)=>a.surname.localeCompare(b.surname));
     }
-    if (i === 3) { 
+    if (i === 3) {
       result = scientists.filter(scientist => scientist.surname.startsWith("С"));
     }
-    if (i === 4) { 
-      result.sort((a,b)=>{
-        const lifeA = parseInt(a.years.split("–")[1]) - parseInt(a.years);
-        const lifeB = parseInt(b.years.split("–")[1]) - parseInt(b.years);
-        return lifeB-lifeA;
-      });
-    }
-    if (i === 5) { 
+    // if (i === 4) {
+    //   result.sort((a,b)=>{
+    //   });
+    // }
+    if (i === 5) {
       result = scientists.filter(scientist => !scientist.name.startsWith("А"));
     }
-    if (i === 6) { 
-      const latest = scientists.reduce((a,b)=> parseInt(a.years) > parseInt(b.years) ? a:b);
-      result = [latest];
+    // if (i === 6) {
+    // }
+    if (i === 7) {
+    //   result = "Нікола Тесла (1856–1943)", "Арістотель (384–322 до н.е.)"        ?????????????????????????????????????????
     }
-    if (i === 7) { 
-      const lives = scientists.map(scientist => {
-        const [birth, death] = scientist.years.split("–").map(y=>parseInt(y));
-        return { ...scientist, life: death-birth };
-      });
-      const max = lives.reduce((a,b)=>a.life>b.life?a:b);
-      const min = lives.reduce((a,b)=>a.life<b.life?a:b);
-      result = [max, min];
-    }
-    if (i === 8) { 
+    if (i === 8) {
       result = scientists.filter(scientist => scientist.name[0]===scientist.surname[0] && scientist.surname!=="");
     }
     render(result);
