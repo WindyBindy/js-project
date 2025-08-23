@@ -11,19 +11,19 @@
     <a href="mailto:codingmagic@gmail.com" class="footer__link">E-Mail: codingmagic@gmail.com</a>
 </li>
 <li class="footer__item">
-    <a href="https://www.facebook.com/CodingMagic" target="_blank" class="footer__link">Facebook: CodingMagic</a>
+    <a href="https://www.facebook.com/" target="_blank" class="footer__link">Facebook: CodingMagic</a>
 </li>
 <li class="footer__item">
-    <a href="https://twitter.com/CodingMagic" target="_blank" class="footer__link">Twitter: CodingMagic</a>
+    <a href="https://x.com/" target="_blank" class="footer__link">Twitter: CodingMagic</a>
 </li>
 <li class="footer__item">
-    <a href="https://www.instagram.com/CodingMagic" target="_blank" class="footer__link">Instagram: CodingMagic</a>
+    <a href="https://www.instagram.com/" target="_blank" class="footer__link">Instagram: CodingMagic</a>
 </li>
 </ul>
 <div class="box">
     <form class="footer__form">
         <input type="email" class="footer__input" placeholder="Ваша ел. адреса..." required>
-         <button type="button" class="footer__btn">Підписатись</button>
+         <button type="button" class="footer__btn" data-modal-footer-open>Підписатись</button>
     </form>
 <p class="footer__subtitle">*Підписавшись, Ви зможете отримувати інформацію про новинки на сайті</p>
 </div>
@@ -33,9 +33,9 @@
 
 
 
-   <div class="backdrop is-hidden">
+   <div class="backdrop is-hidden" data-modal-footer>
       <div class="footer__modal">
-         <button class="modal__btn"><img src="/src/img/mykola-imgs/close.png" alt="close"></button>
+         <button class="modal__btn" data-modal-footer-close><img src="/src/img/mykola-imgs/close.png" alt="close"></button>
         <h2 class="footer__title">Дякую за підписку!</h2>
         <img src="/src/img/mykola-imgs/sword.png" class="modal__icons" alt="sword">
         <img src="/src/img/mykola-imgs/game.png" class="modal__icons" alt="game">
