@@ -74,3 +74,9 @@ a {
   align-content: center;
   align-items: center;
 }
+//----------------------------------------------------------------------- M-O-D-A-L
+.header {
+  &__modal__text {
+    color: antiquewhite;
+  }
+}
