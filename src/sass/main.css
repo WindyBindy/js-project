@@ -44,7 +44,7 @@ p {
 }
 .header__logo__text {
   color: #000;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +70,7 @@ p {
 }
 .header__link {
   color: #000;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -105,7 +105,7 @@ a {
 
 .randomnumber__title {
   color: #000;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -128,7 +128,7 @@ a {
 .randomnumber__output {
   color: #039900;
   text-align: right;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -137,7 +137,7 @@ a {
 .randomnumber__output__incorrect {
   color: #900;
   text-align: right;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +154,7 @@ a {
 }
 .randomnumber__input::-moz-placeholder {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -162,7 +162,7 @@ a {
 }
 .randomnumber__input::placeholder {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -182,14 +182,13 @@ a {
   align-items: center;
 }
 
-
 .football {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .football__title {
-
+}
 .calculator__box {
   display: flex;
   justify-content: center;
@@ -200,7 +199,7 @@ a {
 }
 .calculator__title {
   color: #000;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -216,7 +215,7 @@ a {
 .smart__title {
   color: #000;
   margin-bottom: 36px;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 26px;
   font-weight: 400;
   line-height: normal;
@@ -232,14 +231,14 @@ a {
 }
 .smart__item {
   border-radius: 20px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   padding: 10px;
   flex-basis: calc((80% - 177px) / 4);
 }
 .smart__name {
   color: #000;
   text-align: center;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 18px;
   font-weight: 400;
   line-height: 170%; /* 13.6px */
@@ -249,7 +248,7 @@ a {
   color: #000;
   margin-bottom: 5px;
   text-align: center;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 18px;
   font-weight: 400;
   line-height: 170%; /* 13.6px */
@@ -258,7 +257,7 @@ a {
   color: #000;
   margin-bottom: 5px;
   text-align: center;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 18px;
   font-weight: 400;
   line-height: 170%; /* 13.6px */
@@ -266,7 +265,7 @@ a {
 .smart__dead {
   color: #000;
   text-align: center;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 18px;
   font-weight: 400;
   line-height: 170%; /* 13.6px */
@@ -284,7 +283,6 @@ a {
 }
 .footer__link {
   color: #000;
-
 }
 .calculator__list {
   display: flex;
@@ -306,7 +304,7 @@ a {
 }
 .calculator__input::-moz-placeholder {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -314,7 +312,7 @@ a {
 }
 .calculator__input::placeholder {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -332,7 +330,7 @@ a {
 }
 .calculator__num::-moz-placeholder {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -340,7 +338,7 @@ a {
 }
 .calculator__num::placeholder {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -348,10 +346,10 @@ a {
 }
 .footer__input {
   border-radius: 20px;
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
   padding: 10px 80px 10px 10px;
   align-items: flex-start;
-  color: #7E7E7E;
+  color: #7e7e7e;
   line-height: normal;
 }
 .calculator__box__output {
@@ -366,7 +364,7 @@ a {
 }
 .calculator__output {
   color: #7e7e7e;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -380,8 +378,8 @@ a {
   margin-bottom: 18px;
   margin-right: 36px;
   border: none;
-  color: #FFF;
-  
+  color: #fff;
+}
 .calculator__button__list {
   display: flex;
   flex-direction: column;
@@ -393,16 +391,15 @@ a {
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   color: #fff;
 
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
 }
 .footer__subtitle {
   color: #000;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 6px;
   font-style: normal;
   font-weight: 400;
@@ -416,7 +413,7 @@ a {
   width: 463px;
   padding: 69px 42px 70px 43px;
   border-radius: 20px;
-  background-color: #FFF;
+  background-color: #fff;
   transform: translate(-50%, -50%);
 }
 
@@ -448,7 +445,8 @@ a {
   width: 15px;
   height: 15px;
 }
-.modal__icon:hover, .modal__icon:focus {
+.modal__icon:hover,
+.modal__icon:focus {
   transform: scale(1.25);
 }
 .modal__title {
@@ -475,7 +473,7 @@ a {
   background: #000;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
   color: #fff;
-  font-family: "Montserrat Alternates";
+  font-family: 'Montserrat Alternates';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -552,13 +550,13 @@ a {
 #start__button {
   width: 80px;
   height: 20px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 #game__endgame {
   width: 200px;
   height: 100px;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   position: relative;
   top: -40px;
   left: 200px;
@@ -572,4 +570,4 @@ a {
   top: 60px;
   left: 40px;
   display: block;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
