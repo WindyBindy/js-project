@@ -87,23 +87,73 @@ const scientists = [
 
 
 const grid = document.querySelector(".smart__grid");
+const buttons = document.querySelectorAll(".questions__item")
 
-const item = scientists.map(({name, surname, born, dead})=> {
+const renderSmart = array => {
+grid.innerHTML = array.map(({name, surname, born, dead}) => `<li class="smart__item">
+  <h3 class="smart__name">${name}</h3>
+  <h4 class="smart__surname">${surname}</h4>
+  <p class="smart__born">Born: ${born}</p>
+  <p class="smart__dead">Dead: ${dead}</p>
+</li>`).join("")
+}
+
+
+buttons.forEach(btn => {
+ 
   
 
-  const li = document.createElement("li");
-  const title = document.createElement("h2");
- title.textContent = name;
- const lastname = document.createElement("h3");
-lastname.textContent = surname;
- const birth = document.createElement("p");
- birth.textContent =`Born: ${born}` ;
- const death = document.createElement("p");
- death.textContent = `Dead: ${dead}`;
+  btn.addEventListener("click", (event) =>{
+     const action = event.target.dataset.action;
+     
+     switch(action){
+      case "IXX-ST":  
+      // console.log("Які вчені народилися в 19 ст.");
+      const nineteenCentury = scientists.filter(s => s.born >= 1800);
+      renderSmart(nineteenCentury)
+      break;
 
- li.append(title, lastname, birth, death);
-  return li;
-}).join("")
- grid.insertAdjacentHTML("beforeend", item);
+       case "albert": 
+      //  console.log("Знайти рік народження Альберта Ейнштейна");
+      const albert = scientists.find(s => s.name === "Albert")
+      console.log(albert);
+      alert(`Albert Einstein was born in ${albert.born} year.`)
+      
+       break;
+
+       case "alphabet":
+      console.log("Відсортувати вчених за алфавітом");
+      break;
+
+      case "C-surname": 
+      console.log("Знайти вчених, прізвища яких починаються на літеру “С”");
+      break;
+
+      case "scientists-years":
+      console.log("Відсортувати вчених за кількістю прожитих років");
+      break;
+
+      case "no-A-surname":
+        console.log("Видалити всіх вчених, ім’я яких починається на “А”");
+        break;
+
+      case "last-born":
+        console.log("Знайти вченого, який народився найпізніше");
+      break;
+
+      case "oldest-eldest": 
+console.log("Знайти вченого, який прожив найдовше і вченого, який прожив найменше");
+break;
+
+case "first-letters":
+  console.log("Знайти вчених, в яких співпадають перші літери імені і прізвища");
+  break;
+     }
+  })
+
+})
 
 
+
+
+renderSmart(scientists)
