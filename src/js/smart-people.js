@@ -1,65 +1,109 @@
-const scientists = [
-  { name: "Альберт", surname: "Ейнштейн", years: "1879–1955" },
-  { name: "Ісаак", surname: "Ньютон", years: "1643–1727" },
-  { name: "Марія", surname: "Кюрі", years: "1867–1934" },
-  { name: "Стівен", surname: "Гокінг", years: "1942–2018" },
-  { name: "Чарльз", surname: "Дарвін", years: "1809–1882" },
-  { name: "Нікола", surname: "Тесла", years: "1856–1943" },
-  { name: "Галілео", surname: "Галілей", years: "1564–1642" },
-  { name: "Дмитро", surname: "Менделєєв", years: "1834–1907" },
-  { name: "Михайло", surname: "Ломоносов", years: "1711–1765" },
-  { name: "Карл", surname: "Саган", years: "1934–1996" },
-  { name: "Арістотель", surname: "", years: "384–322 до н.е." },
-  { name: "Олександр", surname: "Флемінг", years: "1881–1955" }
+const scientists = [ 
+    { 
+        name: "Albert", 
+        surname: "Einstein", 
+        born: 1879, 
+        dead: 1955, 
+        id: 1 
+    }, 
+    { 
+        name: "Isaac", 
+        surname: "Newton", 
+        born: 1643, 
+        dead: 1727, 
+        id: 2 
+    }, 
+    { 
+        name: "Galileo", 
+        surname: "Galilei", 
+        born: 1564, 
+        dead: 1642, 
+        id: 3 
+    }, 
+    { 
+        name: "Marie", 
+        surname: "Curie", 
+        born: 1867, 
+        dead: 1934, 
+        id: 4 
+    }, 
+    { 
+        name: "Johannes", 
+        surname: "Kepler", 
+        born: 1571, 
+        dead: 1630, 
+        id: 5 
+    }, 
+    { 
+        name: "Nicolaus", 
+        surname: "Copernicus", 
+        born: 1473, 
+        dead: 1543, 
+        id: 6 
+    }, 
+    { 
+        name: "Max", 
+        surname: "Planck", 
+        born: 1858, 
+        dead: 1947, 
+        id: 7 
+    }, 
+    { 
+        name: "Katherine", 
+        surname: "Blodgett", 
+        born: 1898, 
+        dead: 1979, 
+        id: 8 
+    }, 
+    { 
+        name: "Ada", 
+        surname: "Lovelace", 
+        born: 1815, 
+        dead: 1852, 
+        id: 9 
+    }, 
+    { 
+        name: "Sarah E.", 
+        surname: "Goode", 
+        born: 1855, 
+        dead: 1905, 
+        id: 10 
+    }, 
+    { 
+        name: "Lise", 
+        surname: "Meitner", 
+        born: 1878, 
+        dead: 1968, 
+        id: 11 
+    }, 
+    { 
+        name: "Hanna", 
+        surname: "Hammarström", 
+        born: 1829, 
+        dead: 1909, 
+        id: 12 
+    } 
 ];
 
 
 const grid = document.querySelector(".smart__grid");
-function render(list) {
-  grid.innerHTML = "";
-  list.forEach(scientist => {
-    grid.innerHTML += `<li class="smart__card">
-      <b>${scientist.name} ${scientist.surname}</b><br>
-      <span>${scientist.years}</span>
-    </li>`;
-  });
-}
-render(scientists);
 
+const item = scientists.map(({name, surname, born, dead})=> {
+  
 
-document.querySelectorAll(".questions__item").forEach((btn, i) => {
-  btn.addEventListener("click", () => {
-    let result = [...scientists];
-    if (i === 0) {
-      result = scientists.filter(scientist => parseInt(scientist.years) >= 1801 && parseInt(scientist.years) <= 1900);
-    }
-    if (i === 1) {
-      alert("Albert Einstein: 1879");
-      return;
-    }
-    if (i === 2) {
-      result.sort((a,b)=>a.surname.localeCompare(b.surname));
-    }
-    if (i === 3) {
-      result = scientists.filter(scientist => scientist.surname.startsWith("С"));
-    }
-    // if (i === 4) {
-    //   result.sort((a,b)=>{
-    //   });
-    // }
-    if (i === 5) {
-      result = scientists.filter(scientist => !scientist.name.startsWith("А"));
-    }
-    // if (i === 6) {
-    // }
-    if (i === 7) {
-    //   result = "Нікола Тесла (1856–1943)", "Арістотель (384–322 до н.е.)"        ?????????????????????????????????????????
-    }
-    if (i === 8) {
-      result = scientists.filter(scientist => scientist.name[0]===scientist.surname[0] && scientist.surname!=="");
-    }
-    render(result);
-  });
-});
+  const li = document.createElement("li");
+  const title = document.createElement("h2");
+ title.textContent = name;
+ const lastname = document.createElement("h3");
+lastname.textContent = surname;
+ const birth = document.createElement("p");
+ birth.textContent =`Born: ${born}` ;
+ const death = document.createElement("p");
+ death.textContent = `Dead: ${dead}`;
+
+ li.append(title, lastname, birth, death);
+  return li;
+}).join("")
+ grid.insertAdjacentHTML("beforeend", item);
 
 
