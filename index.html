@@ -147,8 +147,8 @@
 
     <section class="football">
       <div class="container">
-        <h2 class="football-h2">Футбол</h2>
-        <p class="count-goals">Ви забили 0 голів</p>
+        <h2 class="football__title">Футбол</h2>
+        <p class="count__goals">Ви забили 0 голів</p>
           <img src="https://en.js.cx/clipart/ball.svg" class="ball">
           <img src="../img/mykola-imgs/goalkeeper.png" class="goalkeeper" alt="Goalkeeper">
   </div>
@@ -161,20 +161,7 @@
   <div class="container">
     <h2 class="smart__title">Обери вченого/их</h2>
     
-    <ul class="smart__grid">
-      <li class="smart__card">Альберт Ейнштейн (1879–1955)</li>
-      <li class="smart__card">Ісаак Ньютон (1643–1727)</li>
-      <li class="smart__card">Марія Кюрі (1867–1934)</li>
-      <li class="smart__card">Галілео Галілей (1564–1642)</li>
-      <li class="smart__card">Чарльз Дарвін (1809–1882)</li>
-      <li class="smart__card">Нікола Тесла (1856–1943)</li>
-      <li class="smart__card">Дмитро Менделєєв (1834–1907)</li>
-      <li class="smart__card">Стівен Гокінг (1942–2018)</li>
-      <li class="smart__card">Андрій Сахаров (1921–1989)</li>
-      <li class="smart__card">Юрій Кондратюк (1897–1942)</li>
-      <li class="smart__card">Іван Пулюй (1845–1918)</li>
-      <li class="smart__card">Борис Патон (1918–2020)</li>
-    </ul>
+    <ul class="smart__grid"></ul>
 
     <div class="smart__questions">
       <button class="questions__item">Які вчені народилися в 19 ст.</button>
@@ -191,7 +178,7 @@
 </section>
     <footer class="footer">
     <div class="container">
-    <a href="/src/index.html" class="footer__logo">
+    <a href="../index.html" class="footer__logo">
         <img src="/src/img/logo-header.png" alt="logo" class="logo__img">
     </a>
 <ul class="footer__list">
@@ -226,15 +213,16 @@
 
    <div class="backdrop is-hidden" data-modal-footer>
       <div class="footer__modal">
-         <button class="modal__btn" data-modal-footer-close><img src="/src/img/mykola-imgs/close.png" alt="close"></button>
-        <h2 class="footer__title">Дякую за підписку!</h2>
+         <button class="modal__btn" data-modal-footer-close><img src="/src/img/mykola-imgs/close.png" alt="close" class="modal__icon"></button>
+        <h2 class="modal__title">Дякую за підписку!</h2>
+        <ul class="modal__list">
         <img src="/src/img/mykola-imgs/sword.png" class="modal__icons" alt="sword">
         <img src="/src/img/mykola-imgs/game.png" class="modal__icons" alt="game">
         <img src="/src/img/mykola-imgs/puzzle.png" class="modal__icons" alt="puzzle">
         <img src="/src/img/mykola-imgs/tic-tac.png" class="modal__icons" alt="tic-tac-toe">
+        </ul>
       </div>
     </div>
-
     
   </body>
 </html>
