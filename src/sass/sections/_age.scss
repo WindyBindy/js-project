@@ -1,0 +1,45 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group p {
+    margin: 36px 149px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.true-false{
+    margin: 0;
+}
+.input-year{
+    padding: 10px;
+    background-color: #D7D7D7;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.true-false {
+    display: inline;
+    margin-left: 10px;
+}
+.button-year{
+    padding: 11.5px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #000;
+}
+.lupa{
+    width: 15px;
+    height: 15px;
+}
