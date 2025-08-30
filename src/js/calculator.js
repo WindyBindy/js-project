@@ -28,16 +28,28 @@ subBtn.onclick = function () {
 };
 
 function calculator() {
-  if (add == '+') {
+  if (add === '+') {
     const sum = Number(firstNumInput.value) + Number(secondNumInput.value);
     output.textContent = sum;
-  } else if (add == '-') {
+  }
+  if (add === '-') {
     const sum = Number(firstNumInput.value) - Number(secondNumInput.value);
     output.textContent = sum;
-  } else if (add == '*') {
+  }
+  if (add === '*') {
     const sum = Number(firstNumInput.value) * Number(secondNumInput.value);
     output.textContent = sum;
-  } else if (add == '/') {
+  }
+  // if (add === '/') {
+  //   console.log('ура');
+  //   console.log(secondNumInput.value);
+  // }
+  if (add === '/') {
+    if (Number(secondNumInput.value) === 0) {
+      output.textContent = 'помилка';
+      console.log('ура');
+      return;
+    }
     const sum = Number(firstNumInput.value) / Number(secondNumInput.value);
     output.textContent = sum;
   }

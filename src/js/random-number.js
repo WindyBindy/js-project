@@ -2,7 +2,7 @@ const inputEl = document.querySelector('.randomnumber__input');
 const outputEl = document.querySelector('.randomnumber__output');
 
 let secretNum = Math.floor(Math.random() * 10) + 1;
-console.log(secretNum);
+// console.log(secretNum);
 inputEl.addEventListener('input', onTargetInput);
 function onTargetInput(event) {
   console.log(event.target.value);
