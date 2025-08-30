@@ -32,7 +32,7 @@
     />
     
     <script type="module" crossorigin src="/js-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-project/assets/index-660ffea4.css">
+    <link rel="stylesheet" href="/js-project/assets/index-baac2d6d.css">
   </head>
   <body>
     <header class="header">
@@ -58,14 +58,17 @@
       </ul>
     </nav>
     <div class="header__list__right">
-      <div class="theme__changer">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADXSURBVHgBrZKxDsFQFIZPm9hFYmAxWA0WBhIiNouJxWr3BMITWDyJ1eANvIjFIqFC62/yN7297b0l+idf0pOe/7/ntFfELgdU5Q9tQfCLYchTQ7k0P8BSklPVTAE+WbBugr5i9Bm6MQWcwRzM2KjigRJDrBplmCN8iVdMySFBDj3Q0s0niUfLCziAPZ8nLk1X22iabuDJA72sNd45E4xBx5ReBgOxf8SEXK0+ggpYcRJVF4l/Y+a66kWZsq6DrtITvd+JQW0tMGy+S/rmNeRLrcFL0qsWpw82D07nSLM0OwAAAABJRU5ErkJggg==" alt="" />
-      </div>
+      <button type="button" class="header__button">
+        <div class="theme__changer">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADXSURBVHgBrZKxDsFQFIZPm9hFYmAxWA0WBhIiNouJxWr3BMITWDyJ1eANvIjFIqFC62/yN7297b0l+idf0pOe/7/ntFfELgdU5Q9tQfCLYchTQ7k0P8BSklPVTAE+WbBugr5i9Bm6MQWcwRzM2KjigRJDrBplmCN8iVdMySFBDj3Q0s0niUfLCziAPZ8nLk1X22iabuDJA72sNd45E4xBx5ReBgOxf8SEXK0+ggpYcRJVF4l/Y+a66kWZsq6DrtITvd+JQW0tMGy+S/rmNeRLrcFL0qsWpw82D07nSLM0OwAAAABJRU5ErkJggg==" alt="" class="header__sun" />
+        </div>
+      </button>
 
       <p class="header__hello">Вітаємо, User!</p>
     </div>
   </div>
 </header>
+<!-- modal ------------------------------------------------------------------------------------------->
 <div class="header__backdrop header__is-hidden" data-modal>
   <div class="header__modal">
     <p class="header__modal__text">
@@ -81,8 +84,8 @@
       placeholder="Ваше ім’я..."
     />
     <button class="header__modal__btn" type="submit">Зберегти</button>
-    <button class="header__modal__close__btn">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBpVSJCcAwCLwRHMERslGzeUdpQxshJISodyAEOQ+ND/BDkIOOj7tZQQylx8ns8Apt+V6hI+9EcGe8I0ZLXgLCArPQlRUw1GZPF0rBMqkgS0n/Cd0dek7oiaV3RwBqi9Ucihy+M/ACvRokooIV7esAAAAASUVORK5CYII=" alt="" />
+    <button class="header__modal__close__btn" type="button">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBpVSJCcAwCLwRHMERslGzeUdpQxshJISodyAEOQ+ND/BDkIOOj7tZQQylx8ns8Apt+V6hI+9EcGe8I0ZLXgLCArPQlRUw1GZPF0rBMqkgS0n/Cd0dek7oiaV3RwBqi9Ucihy+M/ACvRokooIV7esAAAAASUVORK5CYII=" alt="" />click
     </button>
   </div>
 </div>
