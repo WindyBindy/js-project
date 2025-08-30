@@ -122,27 +122,39 @@ buttons.forEach(btn => {
        break;
 
        case "alphabet":
-      console.log("Відсортувати вчених за алфавітом");
+    //   console.log("Відсортувати вчених за алфавітом");
+    const sorting = scientists.sort((a, b) => a.surname.localeCompare(b.surname));
+    renderSmart(sorting);
       break;
 
       case "C-surname": 
-      console.log("Знайти вчених, прізвища яких починаються на літеру “С”");
+    //   console.log("Знайти вчених, прізвища яких починаються на літеру “С”");
+      const letterC = scientists.filter(s => s.surname.startsWith("C"));
+      renderSmart(letterC);
+      
       break;
 
       case "scientists-years":
-      console.log("Відсортувати вчених за кількістю прожитих років");
+    //   console.log("Відсортувати вчених за кількістю прожитих років");
+    const years = scientists.sort((a, b) => {
+
+    })
+    renderSmart(years)
       break;
 
       case "no-A-surname":
-        console.log("Видалити всіх вчених, ім’я яких починається на “А”");
+        // console.log("Видалити всіх вчених, ім’я яких починається на “А”");
+        const noA = scientists.filter(s => !s.name.startsWith("A"));
+        renderSmart(noA)
         break;
 
       case "last-born":
-        console.log("Знайти вченого, який народився найпізніше");
+        // console.log("Знайти вченого, який народився найпізніше");
+        const latest = scientists.find(s => s.born)
       break;
 
       case "oldest-eldest": 
-console.log("Знайти вченого, який прожив найдовше і вченого, який прожив найменше");
+// console.log("Знайти вченого, який прожив найдовше і вченого, який прожив найменше");
 break;
 
 case "first-letters":
