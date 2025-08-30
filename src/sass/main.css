@@ -35,7 +35,6 @@ p {
   align-content: center;
   align-items: center;
 }
-
 .header__logo {
   outline: solid black 1px;
   width: 93px;
@@ -43,7 +42,6 @@ p {
   display: flex;
   gap: 9px;
 }
-
 .header__logo__text {
   color: #000;
   font-family: "Montserrat Alternates";
@@ -52,7 +50,6 @@ p {
   font-weight: 400;
   line-height: normal;
 }
-
 .header__logo__magic__text {
   color: #000;
   font-family: Sacramento;
@@ -61,19 +58,16 @@ p {
   font-weight: 400;
   height: 18px;
 }
-
 .header__list {
   display: flex;
   gap: 50px;
 }
-
 .header__list__right {
   display: flex;
   gap: 51px;
   align-content: center;
   align-items: center;
 }
-
 .header__link {
   color: #000;
   font-family: "Montserrat Alternates";
@@ -81,6 +75,17 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.header__button {
+  width: 40px;
+  height: 20px;
+  background-color: #7a7a7a;
+  border-radius: 11px;
+  background: #7a7a7a;
+  align-content: center;
+  align-items: center;
+  border: none;
+  position: relative;
 }
 
 .times__hed {
@@ -100,18 +105,28 @@ a {
 }
 
 .theme__changer {
-  width: 40px;
+  background-color: #c0b4b4;
+  border-radius: 50%;
+  width: 20px;
   height: 20px;
-  background-color: #7a7a7a;
-  border-radius: 11px;
-  background: #7a7a7a;
-  align-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 320ms;
 }
 
+.check {
+  background-color: white;
+}
+.check .theme__changer {
+  transform: translateX(20px);
+}
 
-.header__modal__text {
-  color: antiquewhite;
+.dark {
+  background-color: #7a7a7a;
 }
 
 .header__modal {
@@ -125,7 +140,6 @@ a {
   border-radius: 20px;
   background: #fff;
 }
-
 .header__modal__text {
   width: 400px;
   color: #000;
@@ -137,7 +151,6 @@ a {
   line-height: normal;
   margin-bottom: 42px;
 }
-
 .header__modal__question {
   color: #000;
   text-align: center;
@@ -148,7 +161,6 @@ a {
   line-height: normal;
   margin-bottom: 18px;
 }
-
 .header__modal__input {
   width: 169px;
   border-radius: 20px;
@@ -160,7 +172,6 @@ a {
   border: none;
   margin-bottom: 18px;
 }
-
 .header__modal__input::-moz-placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -169,7 +180,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .header__modal__input::placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -178,7 +188,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .header__modal__btn {
   border-radius: 20px;
   background: #000;
@@ -193,7 +202,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .header__modal__close__btn {
   border: none;
   background-color: transparent;
@@ -282,7 +290,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .randomnumber__box {
   display: flex;
   flex-direction: column;
@@ -292,13 +299,11 @@ a {
   padding-top: 36px;
   gap: 36px;
 }
-
 .randomnumber__input__output {
   display: flex;
   gap: 202px;
   align-items: center;
 }
-
 .randomnumber__output {
   color: #039900;
   text-align: right;
@@ -308,7 +313,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .randomnumber__output__incorrect {
   color: #900;
   text-align: right;
@@ -318,7 +322,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .randomnumber__input {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -328,7 +331,6 @@ a {
   border: none;
   padding-left: 10px;
 }
-
 .randomnumber__input::-moz-placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -337,7 +339,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .randomnumber__input::placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -346,12 +347,10 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .randomnumber__input__div {
   display: flex;
   align-items: center;
 }
-
 .randomnumber__icon__css {
   border-radius: 0 20px 20px 0;
   background: #000;
@@ -370,7 +369,6 @@ a {
   padding-bottom: 36px;
   padding-top: 36px;
 }
-
 .calculator__title {
   color: #000;
   font-family: "Montserrat Alternates";
@@ -379,7 +377,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .calculator__list {
   display: flex;
   align-items: center;
@@ -388,7 +385,6 @@ a {
   width: 650px;
   gap: 38px;
 }
-
 .calculator__input {
   width: 135px;
   border-radius: 20px;
@@ -399,7 +395,6 @@ a {
   justify-content: center;
   border: none;
 }
-
 .calculator__input::-moz-placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -408,7 +403,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .calculator__input::placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -417,7 +411,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .calculator__num {
   width: 135px;
   border-radius: 20px;
@@ -428,7 +421,6 @@ a {
   justify-content: center;
   border: none;
 }
-
 .calculator__num::-moz-placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -437,7 +429,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .calculator__num::placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -446,7 +437,6 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .calculator__box__output {
   width: 135px;
   border-radius: 20px;
@@ -457,7 +447,6 @@ a {
   align-items: center;
   border: none;
 }
-
 .calculator__output {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -466,13 +455,11 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
 .calculator__button__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .calculator__btn {
   border-radius: 20px;
   background: #000;
@@ -487,7 +474,6 @@ a {
   height: 25px;
   border: none;
 }
-
 .calculator__output__btn {
   border-radius: 20px;
   background: #000;
@@ -592,24 +578,19 @@ hr {
   0% {
     top: 148px;
   }
-
   30% {
     top: 120px;
   }
-
   50% {
     top: 60px;
   }
-
   80% {
     top: 120px;
   }
-
   100% {
     top: 148px;
   }
 }
-
 #game__cactus {
   width: 20px;
   height: 40px;
@@ -628,12 +609,10 @@ hr {
   0% {
     left: 575px;
   }
-
   100% {
     left: -20px;
   }
 }
-
 #start__button {
   width: 80px;
   height: 20px;
@@ -664,7 +643,6 @@ hr {
   justify-content: center;
   align-items: center;
 }
-
 .football__title {
   color: #000;
   font-family: "Montserrat Alternates";
@@ -674,7 +652,6 @@ hr {
   line-height: normal;
   text-align: center;
 }
-
 
 .title {
   display: flex;
@@ -714,12 +691,10 @@ hr {
   margin: 36px 0;
 }
 
-
 .smart {
   padding-top: 36px;
   padding-bottom: 36px;
 }
-
 .smart__title {
   color: #000;
   margin-bottom: 36px;
@@ -729,7 +704,6 @@ hr {
   line-height: normal;
   text-align: center;
 }
-
 .smart__grid {
   display: flex;
   flex-wrap: wrap;
@@ -738,25 +712,21 @@ hr {
   row-gap: 36px;
   margin-bottom: 36px;
 }
-
 .smart__item {
   border-radius: 20px;
   background: #D9D9D9;
   padding: 10px;
   flex-basis: calc((80% - 177px) / 4);
 }
-
 .smart__name {
   color: #000;
   text-align: center;
   font-family: "Montserrat Alternates";
   font-size: 18px;
   font-weight: 400;
-  line-height: 170%;
-  /* 13.6px */
+  line-height: 170%; /* 13.6px */
   margin-bottom: 5px;
 }
-
 .smart__surname {
   color: #000;
   margin-bottom: 5px;
@@ -764,10 +734,8 @@ hr {
   font-family: "Montserrat Alternates";
   font-size: 18px;
   font-weight: 400;
-  line-height: 170%;
-  /* 13.6px */
+  line-height: 170%; /* 13.6px */
 }
-
 .smart__born {
   color: #000;
   margin-bottom: 5px;
@@ -775,18 +743,15 @@ hr {
   font-family: "Montserrat Alternates";
   font-size: 18px;
   font-weight: 400;
-  line-height: 170%;
-  /* 13.6px */
+  line-height: 170%; /* 13.6px */
 }
-
 .smart__dead {
   color: #000;
   text-align: center;
   font-family: "Montserrat Alternates";
   font-size: 18px;
   font-weight: 400;
-  line-height: 170%;
-  /* 13.6px */
+  line-height: 170%; /* 13.6px */
 }
 
 .questions__item {
@@ -802,34 +767,21 @@ hr {
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
-
 .footer {
   padding-top: 61px;
   padding-bottom: 59px;
 }
-
 .footer__box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .footer__logo {
   margin-right: 160px;
 }
-
 .footer__list {
   margin-right: 160px;
 }
-
-.footer__logo {
-  margin-right: 185px;
-}
-
-.footer__list {
-  margin-right: 187px;
-}
-
 .footer__link {
   color: #000;
   font-family: "Montserrat Alternates";
@@ -838,12 +790,10 @@ hr {
   font-weight: 400;
   line-height: 170%;
 }
-
 .footer__boxx {
   display: flex;
   flex-direction: row;
 }
-
 .footer__input {
   border-radius: 20px;
   background-color: #D7D7D7;
@@ -855,11 +805,8 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
   margin-right: 36px;
-
 }
-
 .footer__btn {
   border-radius: 20px;
   background-color: #000;
@@ -874,35 +821,14 @@ hr {
   font-weight: 400;
   line-height: normal;
 }
-
 .footer__subtitle {
-
   margin-top: 20px;
   color: #000;
   font-family: "Montserrat Alternates";
   font-size: 10px;
-
-  color: #000;
-  font-family: "Montserrat Alternates";
-  font-size: 6px;
-  font-style: normal;
-
   font-weight: 400;
   line-height: normal;
 }
-
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 463px;
-  padding: 69px 42px 70px 43px;
-  border-radius: 20px;
-  background-color: #FFF;
-  transform: translate(-50%, -50%);
-}
-
 
 .backdrop {
   position: fixed;
@@ -920,7 +846,6 @@ hr {
   transition: 250ms;
 }
 
-
 .modal {
   position: absolute;
   top: 50%;
@@ -931,7 +856,6 @@ hr {
   background-color: #fff;
   transform: translate(-50%, -50%);
 }
-
 .modal__btn {
   background: transparent;
   border: none;
@@ -940,17 +864,13 @@ hr {
   top: 30px;
   right: 30px;
 }
-
 .modal__icon {
   width: 15px;
   height: 15px;
 }
-
-.modal__icon:hover,
-.modal__icon:focus {
+.modal__icon:hover, .modal__icon:focus {
   transform: scale(1.25);
 }
-
 .modal__title {
   color: #000;
   text-align: center;
@@ -962,10 +882,7 @@ hr {
   margin-top: 83px;
   text-align: center;
 }
-
 .modal__icons {
   width: 30px;
   height: 30px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
