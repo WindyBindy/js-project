@@ -21,14 +21,17 @@
       </ul>
     </nav>
     <div class="header__list__right">
-      <div class="theme__changer">
-        <img src="./img/sun-bg-changer.png" alt="" />
-      </div>
+      <button type="button" class="header__button">
+        <div class="theme__changer">
+          <img src="./img/sun-bg-changer.png" alt="" class="header__sun" />
+        </div>
+      </button>
 
       <p class="header__hello">Вітаємо, User!</p>
     </div>
   </div>
 </header>
+<!-- modal ------------------------------------------------------------------------------------------->
 <div class="header__backdrop header__is-hidden" data-modal>
   <div class="header__modal">
     <p class="header__modal__text">
@@ -44,8 +47,8 @@
       placeholder="Ваше ім’я..."
     />
     <button class="header__modal__btn" type="submit">Зберегти</button>
-    <button class="header__modal__close__btn">
-      <img src="./img/close-icon.png" alt="" />
+    <button class="header__modal__close__btn" type="button">
+      <img src="./img/close-icon.png" alt="" />click
     </button>
   </div>
 </div>
