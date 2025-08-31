@@ -76,6 +76,17 @@ p {
   font-weight: 400;
   line-height: normal;
 }
+.header__button {
+  width: 40px;
+  height: 20px;
+  background-color: #7a7a7a;
+  border-radius: 11px;
+  background: #7a7a7a;
+  align-content: center;
+  align-items: center;
+  border: none;
+  position: relative;
+}
 
 .times__hed {
   display: flex;
@@ -94,14 +105,19 @@ a {
 }
 
 .theme__changer {
-  width: 40px;
+  background-color: #c0b4b4;
+  border-radius: 50%;
+  width: 20px;
   height: 20px;
-  background-color: #7a7a7a;
-  border-radius: 11px;
-  background: #7a7a7a;
-  align-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 320ms;
 }
+
 
 .header__modal {
   display: flex;
@@ -468,6 +484,66 @@ a {
   gap: 10px;
 }
 
+.time__calculator {
+  padding: 36px 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid black;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time__dots {
+  margin: 0 33px;
+}
+
+.time__wrapper {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.time__input {
+  border-radius: 20px;
+  background: #D7D7D7;
+  border: none;
+  padding: 10px 10px 10px;
+}
+
+.time__search {
+  width: 15px;
+  height: 15px;
+}
+
+.time__button {
+  padding: 10px;
+  padding-bottom: 6px;
+  border-radius: 0 20px 20px 0;
+  background: #000;
+  position: absolute;
+  left: 161px;
+}
+
+.time__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
 .game {
   width: 600px;
   height: 200px;
@@ -720,7 +796,6 @@ a {
   font-weight: 400;
   line-height: normal;
   margin-right: 36px;
-  border: none;
 }
 .footer__btn {
   border-radius: 20px;
