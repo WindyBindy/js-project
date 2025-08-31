@@ -28,6 +28,13 @@ p {
   margin: 0;
 }
 
+body {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .header__box {
   display: flex;
   justify-content: space-between;
@@ -118,6 +125,16 @@ a {
   transition: all 320ms;
 }
 
+.check {
+  background-color: white;
+}
+.check .theme__changer {
+  transform: translateX(20px);
+}
+
+.dark {
+  background-color: #7a7a7a;
+}
 
 .header__modal {
   display: flex;
@@ -218,6 +235,12 @@ a {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -796,6 +819,7 @@ hr {
   font-weight: 400;
   line-height: normal;
   margin-right: 36px;
+  border: none;
 }
 .footer__btn {
   border-radius: 20px;

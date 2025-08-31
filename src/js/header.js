@@ -30,3 +30,53 @@ btnRef.addEventListener('click', () => {
     switchImg.src = day;
   }
 });
+//modal----------------------------------
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+  };
+
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('header__is-hidden');
+    document.body.classList.toggle('no-scroll');
+  }
+})();
+
+const modelEl = document.querySelector('.header__backdrop');
+window.addEventListener('keydown', onEscClose);
+
+function onEscClose(event) {
+  if (event.code === 'Escape') {
+    modelEl.classList.toggle('header__is-hidden');
+  }
+}
+modelEl.addEventListener('click', onBackdropClick);
+function onBackdropClick(event) {
+  if (event.target === event.currentTarget) {
+    modelEl.classList.toggle('header__is-hidden');
+  }
+}
+// (непонимаю как работает если работает то ненадо трогать его хехе)
+//submit
+const nameHello = document.querySelector('.helloname');
+const formEl = document.querySelector('.header__form');
+const nameInputEl = document.querySelector('.header__modal__input');
+// console.log(nameInputEl.value)
+let name = '';
+nameInputEl.addEventListener('input', onTargetInput);
+function onTargetInput(event) {
+  name = event.target.value;
+}
+formEl.addEventListener('submit', onFormSubmit);
+function onFormSubmit(event) {
+  event.preventDefault();
+
+  if (event.target.value === undefined) {
+    nameHello.textContent = name;
+    modelEl.classList.toggle('header__is-hidden');
+  }
+}
