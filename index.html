@@ -32,7 +32,7 @@
     />
     
     <script type="module" crossorigin src="/js-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-project/assets/index-e49f1e1d.css">
+    <link rel="stylesheet" href="/js-project/assets/index-97cbc489.css">
   </head>
   <body>
     <header class="header">
@@ -64,12 +64,12 @@
         </div>
       </button>
 
-      <p class="header__hello">Вітаємо, User!</p>
+      <p class="header__hello">Вітаємо, <span class="helloname">User</span>!</p>
     </div>
   </div>
 </header>
 <!-- modal ------------------------------------------------------------------------------------------->
-<div class="header__backdrop header__is-hidden" data-modal>
+<div class="header__backdrop" data-modal>
   <div class="header__modal">
     <p class="header__modal__text">
       Привіт! <br />
@@ -78,14 +78,17 @@
       <br />Бажаємо Вам гарно провести час!
     </p>
     <p class="header__modal__question">Введіть своє ім’я:</p>
+    <form class="header__form">
     <input
       type="text"
       class="header__modal__input"
       placeholder="Ваше ім’я..."
     />
+
     <button class="header__modal__btn" type="submit">Зберегти</button>
     <button class="header__modal__close__btn" type="button">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBpVSJCcAwCLwRHMERslGzeUdpQxshJISodyAEOQ+ND/BDkIOOj7tZQQylx8ns8Apt+V6hI+9EcGe8I0ZLXgLCArPQlRUw1GZPF0rBMqkgS0n/Cd0dek7oiaV3RwBqi9Ucihy+M/ACvRokooIV7esAAAAASUVORK5CYII=" alt="" />click
+      </form>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBpVSJCcAwCLwRHMERslGzeUdpQxshJISodyAEOQ+ND/BDkIOOj7tZQQylx8ns8Apt+V6hI+9EcGe8I0ZLXgLCArPQlRUw1GZPF0rBMqkgS0n/Cd0dek7oiaV3RwBqi9Ucihy+M/ACvRokooIV7esAAAAASUVORK5CYII=" alt="" data-modal-close />click
     </button>
   </div>
 </div>
