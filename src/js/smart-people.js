@@ -136,9 +136,7 @@ buttons.forEach(btn => {
 
       case "scientists-years":
     //   console.log("Відсортувати вчених за кількістю прожитих років");
-    const years = scientists.sort((a, b) => {
-
-    })
+    const years = scientists.sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
     renderSmart(years)
       break;
 
