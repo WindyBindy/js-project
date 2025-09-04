@@ -567,6 +567,19 @@ hr {
   margin-bottom: 36px;
 }
 
+.time__equal {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wrong-text {
+  color: red;
+}
+
 .game {
   width: 600px;
   height: 200px;
@@ -577,7 +590,7 @@ hr {
 #game__dino {
   width: 50px;
   height: 50px;
-  background-image: url(../img/dino.png);
+  background-image: url(../img/artem-img/dino.png);
   background-size: 50px 50px;
   position: relative;
   top: 148px;
@@ -610,7 +623,7 @@ hr {
   position: relative;
   top: 108px;
   left: 575px;
-  background-image: url(../img/cactus.png);
+  background-image: url(../img/artem-img/cactus.png);
   background-size: 20px 40px;
 }
 
