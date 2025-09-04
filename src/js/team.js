@@ -2,7 +2,7 @@ const members = [
   {
     name: "Артем Барсуков",
     info: "Розробник таких секцій як: Високосний рік, 3 числа та секції розробників",
-    img: "https://i.imgur.com/QsgQWwk.jpeg"
+    img: "https://imgur.com/QsgQWwk"
   },
   {
     name: "Нікіта Новський",
