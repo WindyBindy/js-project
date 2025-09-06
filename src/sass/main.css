@@ -29,6 +29,13 @@ p {
   margin: 0;
 }
 
+body {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .header__box {
   display: flex;
   justify-content: space-between;
@@ -229,6 +236,12 @@ a {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -555,6 +568,19 @@ hr {
   margin-bottom: 36px;
 }
 
+.time__equal {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wrong-text {
+  color: red;
+}
+
 .game {
   width: 600px;
   height: 200px;
@@ -565,7 +591,7 @@ hr {
 #game__dino {
   width: 50px;
   height: 50px;
-  background-image: url(../img/dino.png);
+  background-image: url(../img/artem-img/dino.png);
   background-size: 50px 50px;
   position: relative;
   top: 148px;
@@ -598,7 +624,7 @@ hr {
   position: relative;
   top: 108px;
   left: 575px;
-  background-image: url(../img/cactus.png);
+  background-image: url(../img/artem-img/cactus.png);
   background-size: 20px 40px;
 }
 
@@ -727,6 +753,94 @@ hr {
   align-items: center;
   justify-content: center;
   margin: 36px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+.team_title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.team-carousel {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member {
+  width: 320px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  padding: 20px;
+  border-radius: 12px;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+.team_names {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.team_info {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 16px auto 20px auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.arrow img {
+  width: 50px;
+  height: 100px;
+}
+
+.progress {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
 }
 
 .smart {
