@@ -87,6 +87,7 @@ line-height: normal;
     width: 100%;
     height: 100%;
     opacity: 1;
+    transition: 250ms;
 }
 
 .backdrop.is-hidden {
@@ -111,6 +112,7 @@ position: absolute;
     border-radius: 20px;
 background-color: #fff;
   transform: translate(-50%, -50%);
+   transition: 250ms;
 
 
 &__btn{
@@ -149,5 +151,23 @@ text-align: center;
     &__icons{
         width: 30px;
 height: 30px;
+position: absolute;
+top: 69px;
+left: 43px;
+    }
+
+    .modal__icons:nth-of-type(2) {
+        left: 391px;
+        top: 185px;
+    }
+    
+    .modal__icons:nth-of-type(3) {
+        top: 185px;
+        right: 300px;
+    }
+    
+    .modal__icons:nth-of-type(4) {
+        left: 391px;
+        top: 69px;
     }
 }
