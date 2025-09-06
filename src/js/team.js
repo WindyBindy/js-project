@@ -1,4 +1,5 @@
 import artem from "../img/team-img/artemb.jpg";
+import artemb from "../img/team-img/artembaranuk.jpg";
 const members = [
   {
     name: "Артем Барсуков",
@@ -13,7 +14,7 @@ const members = [
   {
     name: "Артем Бараник",
     info: "Розробник таких секцій як: Камінь-ножиці-папір, калькулятор часу та гра Динозавр",
-    img: "https://placeholder.apptor.studio/200/200/product1.png"
+    img: artemb,
   },
   {
     name: "Микола Давиденко",
