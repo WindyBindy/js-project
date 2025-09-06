@@ -148,15 +148,22 @@ buttons.forEach(btn => {
 
       case "last-born":
         // console.log("Знайти вченого, який народився найпізніше");
-        const latest = scientists.find(s => s.born)
+        const latest = scientists.sort((a, b) => b.born - a.born);
+  renderSmart(latest)
       break;
 
       case "oldest-eldest": 
 // console.log("Знайти вченого, який прожив найдовше і вченого, який прожив найменше");
+const sorted = scientists.sort((a, b) => (b.dead - b.born) - (a.dead - a.born));
+  const maxLived = sorted[0];
+  const minLived = sorted[sorted.length - 1];
+  renderSmart([maxLived, minLived]);
 break;
 
 case "first-letters":
-  console.log("Знайти вчених, в яких співпадають перші літери імені і прізвища");
+  // console.log("Знайти вчених, в яких співпадають перші літери імені і прізвища");
+   const letters = scientists.filter(s => s.name[0] === s.surname[0]);
+  renderSmart(letters);
   break;
      }
   })
