@@ -1,8 +1,9 @@
+import artem from "../img/team-img/artemb.jpg";
 const members = [
   {
     name: "Артем Барсуков",
     info: "Розробник таких секцій як: Високосний рік, 3 числа та секції розробників",
-    img: "./img/team-img/ArtemB.jpg"
+    img: artem,
   },
   {
     name: "Нікіта Новський",
