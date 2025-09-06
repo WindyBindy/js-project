@@ -32,7 +32,7 @@
     />
     
     <script type="module" crossorigin src="/js-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-project/assets/index-f772dbce.css">
+    <link rel="stylesheet" href="/js-project/assets/index-a9050a08.css">
   </head>
   <body>
     <header class="header">
@@ -98,7 +98,7 @@
         <h1 class="title">Перевірка року народження</h1>
         <div class="input-group">
             <input type="number" class="input-year" placeholder="Введіть рік народження">
-            <button class="button-year" ><img src="../img/search-icon.png" alt="loopa" class="lupa"></button>
+            <button class="button-year" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADFSURBVHgBtVIBEcIwDAwomINVAg6YBBxsEnBQHAwH4GASQAIOJmE4CM1I70IuS3fc7e9y1zaf/7YJgAAiNimGFBN+MfH+BCUk0hV99GuKyTGmqPk8pDiLG92s4kYUHxYMghBpdHLgRAT/iZF5D53IyqEgUOWb6sQMWAGLu0/x5mRdKK6scxJ48boDH3kWnlpZdiGA7U5dGJnXWoS7EGmzEH/cBX8n0zQhco8+ssjoiXTUZ+VI+6N6xrKIh01EdvAH2Hke6Q900YXdEYBVTAAAAABJRU5ErkJggg==" alt="loopa" class="lupa"></button>
             <p class="true-false" style="color: green;">Ви народилися у високосний рік!</p>
         </div>
     <div class="result"></div>
@@ -215,11 +215,16 @@
 
     <section class="football">
       <div class="container">
+        <!-- <div class="football__box"> -->
         <h2 class="football__title">Футбол</h2>
-        <p class="count__goals">Ви забили 0 голів</p>
-          <img src="https://en.js.cx/clipart/ball.svg" class="ball">
-          <img src="../img/mykola-imgs/goalkeeper.png" class="goalkeeper" alt="Goalkeeper">
-  </div>
+        <p class="football__counter">Голів: <span id="score">0</span></p>
+        <div id="field">
+          <img src="https://en.js.cx/clipart/ball.svg" id="ball">
+           <div id="goal"></div>
+        </div>
+        </div>
+        </div>
+        </div>
 </section>
  
 
@@ -243,13 +248,13 @@
       </button>
 
       <div class="member">
-        <img alt="Фото студента">
+        <img src="../img/team-img/ArtemB.jpg" alt="Фото студента">
         <h3 class="team_names">Ім’я студента</h3>
         <p class="team_info">Інформація про роботу, яку він/вона виконав/ла</p>
       </div>
 
       <button class="arrow right">
-        <img src="../img/team-img/right.png" alt="→">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAABmCAYAAACEPrIXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVHgB7dpRCcMADAbhMAWVUAnzb2ZW1lKohrtwH/wCDvKYmccxi5zXfte+s8gdU5RBURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRlUZRFURZFWRRl8UZ9JjirTq4YqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqEqhqoYqmKoiqFaFXPMwhfHc5b4A3pLe2DX0SayAAAAAElFTkSuQmCC" alt="→">
       </button>
     </div>
     <div class="progress">1 / 4</div>
@@ -311,15 +316,13 @@
 
 
    <div class="backdrop is-hidden" data-modal-footer>
-      <div class="footer__modal">
+      <div class="modal">
          <button class="modal__btn" data-modal-footer-close><img src="../img/mykola-imgs/close.png" alt="close" class="modal__icon"></button>
         <h2 class="modal__title">Дякую за підписку!</h2>
-        <ul class="modal__list">
-        <img src="../img/mykola-imgs/sword.png" class="modal__icons" alt="sword">
-        <img src="../img/mykola-imgs/game.png" class="modal__icons" alt="game">
-        <img src="../img/mykola-imgs/puzzle.png" class="modal__icons" alt="puzzle">
-        <img src="../img/mykola-imgs/tic-tac.png" class="modal__icons" alt="tic-tac-toe">
-        </ul>
+<img src="../img/mykola-imgs/sword.png" class="modal__icons" alt="sword">
+<img src="../img/mykola-imgs/game.png" class="modal__icons" alt="game">
+<img src="../img/mykola-imgs/puzzle.png" class="modal__icons" alt="puzzle">
+<img src="../img/mykola-imgs/tic-tac.png" class="modal__icons" alt="tic-tac-toe">
       </div>
     </div>
     
