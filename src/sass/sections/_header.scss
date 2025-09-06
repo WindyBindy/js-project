@@ -101,11 +101,12 @@ a {
 //----------------------------------------------------------------------- M-O-D-A-L
 .header {
   &__modal {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    outline: #000 solid 1px;
+
     width: 576px;
     height: 316px;
     border-radius: 20px;
@@ -168,8 +169,29 @@ a {
       border: none;
       background-color: transparent;
       position: absolute;
-      top: 185px;
-      left: 900px;
+      top: 30px;
+      right: 30px;
+    }
+
+    &__sword {
+      position: absolute;
+      left: 41px;
+      top: 154px;
+    }
+    &__puzzle {
+      position: absolute;
+      left: 85px;
+      top: 230px;
+    }
+    &__game {
+      position: absolute;
+      right: 41px;
+      top: 154px;
+    }
+    &__tic-tac {
+      position: absolute;
+      right: 85px;
+      top: 230px;
     }
   }
 }
