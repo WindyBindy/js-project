@@ -1,4 +1,4 @@
-import artem from "../img/team-img/artemb.jpg";
+import artem from "../img/team-img/artembarsukov.jpg";
 import artemb from "../img/team-img/artembaranuk.jpg";
 const members = [
   {
