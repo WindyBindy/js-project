@@ -688,9 +688,8 @@ hr {
 .football {
   padding-top: 36px;
   padding-bottom: 36px;
-}
-.football__box {
-  background-color: green;
+  display: flex;
+  align-items: center;
 }
 .football__title {
   color: #000;
@@ -714,9 +713,12 @@ hr {
 }
 
 #field {
-  width: 200px;
-  height: 150px;
+  width: 720px;
+  height: 220px;
   position: relative;
+  border-radius: 37px;
+  border: 2px solid #000;
+  background-color: #5ABB58;
 }
 
 #ball {
@@ -727,14 +729,15 @@ hr {
 }
 
 #goal {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
   width: 30px;
   height: 100px;
-  background: white;
-  border: 2px solid black;
+  border: 4px solid white;
+  border-right: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: transparent;
 }
 
 .title {
