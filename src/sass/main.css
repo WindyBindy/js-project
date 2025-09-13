@@ -689,7 +689,7 @@ hr {
 #dino {
   width: 40px;
   height: 40px;
-  background-image: url("../../img/artem-img/dino.png");
+  background-image: url("../img/artem-img/dino.png");
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -699,7 +699,7 @@ hr {
 .cactus {
   width: 20px;
   height: 40px;
-  background-image: url("../../img/artem-img/cactus.png");
+  background-image: url("../img/artem-img/cactus.png");
   background-size: cover;
   position: absolute;
   bottom: 0;
