@@ -32,7 +32,7 @@
     />
     
     <script type="module" crossorigin src="/js-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-project/assets/index-a84cec9c.css">
+    <link rel="stylesheet" href="/js-project/assets/index-1e5ae76e.css">
   </head>
   <body>
     <header class="header">
@@ -133,7 +133,48 @@
   </div>
 </section>
 
-    
+    <section class="paper">
+  <div class="container paper__flex">
+    <div class="paper__wraper">
+      <h2 class="paper__title">Камінь - ножиці - папір</h2>
+      <ul class="paper__list">
+        <li class="paper__item">
+          <button type="button" class="paper__btn" data-choice="камінь">
+            <img src="../img/artem-img/stone.png" alt="" class="paper__img" />
+          </button>
+        </li>
+        <li class="paper__item">
+          <button type="button" class="paper__btn" data-choice="ножиці">
+            <img src="../img/artem-img/paper.png" alt="" class="paper__img" />
+          </button>
+        </li>
+        <li class="paper__item">
+          <button type="button" class="paper__btn" data-choice="папір">
+            <img
+              src="../img/artem-img/scissors.png"
+              alt=""
+              class="paper__img"
+            />
+          </button>
+        </li>
+      </ul>
+      <p class="paper__result">Ви виграли раунд!</p>
+      <button type="button" class="paper__button">Варіант комп’ютера</button>
+    </div>
+    <ul class="paper__items">
+      <li class="paper__elem">
+        <p class="paper__text">Рахунок</p>
+      </li>
+      <li class="paper__elem">
+        <p class="paper__text" id="computer">Комп’ютер</p>
+      </li>
+      <li class="paper__elem">
+        <p class="paper__text" id="player">Ви</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
     <section class="calculator">
   <div class="container calculator__box">
     <h2 class="calculator__title">Калькуляторf</h2>
@@ -202,18 +243,11 @@
 <hr />
 
     <div class="container">
-  <div class="game">
-    <div id="game__dino"></div>
-    <div id="game__cactus"></div>
-    <div id="game__endgame " class="is-hidden">
-      <button type="button" class="button__start is-hidden">
-        Перезапустити
-      </button>
-    </div>
-  </div>
-  <div class="settings">
-    <button type="button" id="start__button">Почати гру</button>
-    <!-- asg-->
+  <div id="game">
+    <div id="dino"></div>
+    <div id="score">Час: 0 сек</div>
+    <!-- ОЦЕ ДОДАЙ -->
+    <button id="startBtn">Почати гру</button>
   </div>
 </div>
 
