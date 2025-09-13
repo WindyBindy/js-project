@@ -1,52 +1,76 @@
-const dino = document.getElementById("game__dino");
-const cactus = document.getElementById("game__cactus");
-const start = document.getElementById("start__button");
-const endGame = document.getElementById("game__endgame")
+const game = document.getElementById("game");
+const dino = document.getElementById("dino");
+const scoreDisplay = document.getElementById("score");
+const startBtn = document.getElementById("startBtn");
 
-let isGameRunning = false;
-let isAlive = null;
+let gameStarted = false;
+let score = 0;
+let scoreInterval;
 
-
-function jump() {
-    if (dino.classList != "jump") {
-        dino.classList.add("jump");
-        setTimeout(function () {
-            dino.classList.remove("jump")
-        },
-            600)
-    }
-}
-
-
-function handleKeyDown() {
-    if (isGameRunning) {
+document.addEventListener("keydown", function (event) {
+    if (event.code === "Space" && gameStarted) {
         jump();
     }
+});
+
+startBtn.addEventListener("click", () => {
+    if (!gameStarted) {
+        gameStarted = true;
+        score = 0;
+        scoreDisplay.textContent = "Час: 0 сек";
+        startBtn.style.display = "none";
+        spawnCactusRandomly();
+        startScoreCounter();
+    }
+});
+
+function startScoreCounter() {
+    scoreInterval = setInterval(() => {
+        score++;
+        scoreDisplay.textContent = `Час: ${score} сек`;
+    }, 1000);
 }
 
-document.addEventListener("keydown", handleKeyDown);
+function jump() {
+    if (!dino.classList.contains("jump")) {
+        dino.classList.add("jump");
+        setTimeout(() => {
+            dino.classList.remove("jump");
+        }, 500);
+    }
+}
 
+function createCactus() {
+    const cactus = document.createElement("div");
+    cactus.classList.add("cactus");
+    cactus.style.left = "600px";
+    game.appendChild(cactus);
 
-function startGame() {
-    if (isGameRunning) return;
+    let moveInterval = setInterval(() => {
+        let cactusLeft = parseInt(cactus.style.left);
+        cactus.style.left = (cactusLeft - 5) + "px";
 
-    isGameRunning = true;
-    cactus.style.left = "575px";
-    cactus.classList.add("cactus__anim");
+        let dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
 
-    isAlive = setInterval(() => {
-        let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-        let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
-
-        if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-
-            cactus.classList.remove("cactus__anim");
-            clearInterval(isAlive);
-            isGameRunning = false;
+        if (cactusLeft < 90 && cactusLeft > 50 && dinoBottom < 40) {
+            alert(`Гру завершено! Ваш час: ${score} сек`);
+            clearInterval(moveInterval);
+            clearInterval(scoreInterval);
+            location.reload();
         }
-    }, 10);
+
+        if (cactusLeft < -20) {
+            clearInterval(moveInterval);
+            cactus.remove();
+        }
+    }, 20);
 }
 
-
-
-start.addEventListener("click", startGame);
+function spawnCactusRandomly() {
+    if (!gameStarted) return;
+    let randomTime = Math.floor(Math.random() * 2000) + 1000;
+    setTimeout(() => {
+        createCactus();
+        spawnCactusRandomly();
+    }, randomTime);
+}
