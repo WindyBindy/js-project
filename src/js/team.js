@@ -1,5 +1,6 @@
 import artem from "../img/team-img/artembarsukov.jpg";
 import artemb from "../img/team-img/artembaranuk.jpg";
+import nikita from "../img/team-img/nikita.jpg"
 const members = [
   {
     name: "Артем Барсуков",
@@ -9,7 +10,7 @@ const members = [
   {
     name: "Нікіта Новський",
     info: "Розробник таких секцій як: Калькулятор, Рандомні числа та шапки сайту (Хедер)",
-    img: "https://placeholder.apptor.studio/150/150/product1.png"
+    img: nikita
   },
   {
     name: "Артем Бараник",
