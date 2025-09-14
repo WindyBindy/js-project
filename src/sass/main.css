@@ -43,7 +43,6 @@ body {
   align-items: center;
 }
 .header__logo {
-  outline: solid black 1px;
   width: 93px;
   height: 39px;
   display: flex;
@@ -596,6 +595,12 @@ a {
 .test-css {
   display: flex;
   gap: 10px;
+}
+
+.calculator__span {
+  color: red;
+  transform: scale(0);
+  transition: all 1s;
 }
 
 .time__calculator {
