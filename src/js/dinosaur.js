@@ -8,13 +8,15 @@ let score = 0;
 let scoreInterval;
 
 document.addEventListener("keydown", function (event) {
+    event.preventDefault();
     if (event.code === "Space" && gameStarted) {
         jump();
     }
 });
 
-startBtn.addEventListener("click", () => {
+startBtn.addEventListener("click", (event) => {
     if (!gameStarted) {
+        event.preventDefault();
         gameStarted = true;
         score = 0;
         scoreDisplay.textContent = "Час: 0 сек";
@@ -52,11 +54,14 @@ function createCactus() {
 
         let dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
 
+      
         if (cactusLeft < 90 && cactusLeft > 50 && dinoBottom < 40) {
             alert(`Гру завершено! Ваш час: ${score} сек`);
             clearInterval(moveInterval);
             clearInterval(scoreInterval);
-            location.reload();
+            gameStarted = false;
+            startBtn.style.display = "block"; 
+            removeAllCactuses(); 
         }
 
         if (cactusLeft < -20) {
@@ -70,7 +75,14 @@ function spawnCactusRandomly() {
     if (!gameStarted) return;
     let randomTime = Math.floor(Math.random() * 2000) + 1000;
     setTimeout(() => {
-        createCactus();
-        spawnCactusRandomly();
+        if (gameStarted) { 
+            createCactus();
+            spawnCactusRandomly();
+        }
     }, randomTime);
+}
+
+
+function removeAllCactuses() {
+    document.querySelectorAll(".cactus").forEach(cactus => cactus.remove());
 }
