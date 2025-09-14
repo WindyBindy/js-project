@@ -119,3 +119,8 @@
   display: flex;
   gap: 10px;
 }
+.calculator__span {
+  color: red;
+  transform: scale(0);
+  transition: all 1s;
+}
