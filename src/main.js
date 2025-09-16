@@ -6,6 +6,7 @@ import "./js/calculator";
 import "./js/time.calculater";
 import "./js/dinosaur";
 import "./js/football";
+import "./js/tetris";
 import "./js/three-nums";
 import "./js/team";
 import "./js/smart-people";
