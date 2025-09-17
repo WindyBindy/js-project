@@ -8,7 +8,6 @@ let score = 0;
 let scoreInterval;
 
 document.addEventListener("keydown", function (event) {
-    event.preventDefault();
     if (event.code === "Space" && gameStarted) {
         jump();
     }
@@ -54,14 +53,16 @@ function createCactus() {
 
         let dinoBottom = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
 
-      
+
         if (cactusLeft < 90 && cactusLeft > 50 && dinoBottom < 40) {
             alert(`Гру завершено! Ваш час: ${score} сек`);
             clearInterval(moveInterval);
             clearInterval(scoreInterval);
             gameStarted = false;
-            startBtn.style.display = "block"; 
-            removeAllCactuses(); 
+            startBtn.style.display = "block";
+            removeAllCactuses();
+            score = 0
+            scoreDisplay.textContent = "Час: 0 сек";
         }
 
         if (cactusLeft < -20) {
@@ -75,7 +76,7 @@ function spawnCactusRandomly() {
     if (!gameStarted) return;
     let randomTime = Math.floor(Math.random() * 2000) + 1000;
     setTimeout(() => {
-        if (gameStarted) { 
+        if (gameStarted) {
             createCactus();
             spawnCactusRandomly();
         }
