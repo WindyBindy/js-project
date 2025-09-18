@@ -9,17 +9,18 @@ let scoreInterval;
 
 document.addEventListener("keydown", function (event) {
     if (event.code === "Space" && gameStarted) {
-        jump();
+        event.preventDefault()
+        jump()
     }
 });
 
 startBtn.addEventListener("click", (event) => {
+    event.preventDefault();
     if (!gameStarted) {
-        event.preventDefault();
         gameStarted = true;
         score = 0;
-        scoreDisplay.textContent = "Час: 0 сек";
         startBtn.style.display = "none";
+        game.focus()
         spawnCactusRandomly();
         startScoreCounter();
     }
