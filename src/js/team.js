@@ -1,6 +1,7 @@
 import artem from "../img/team-img/artembarsukov.jpg";
 import artemb from "../img/team-img/artembaranuk.jpg";
 import nikita from "../img/team-img/nikita.jpg"
+import mykola from "../img/team-img/mykola.jpg"
 const members = [
   {
     name: "Артем Барсуков",
@@ -20,7 +21,7 @@ const members = [
   {
     name: "Микола Давиденко",
     info: "Розробник таких секцій як: Підвал сайту (футер), гра у футбол та Розумні люди",
-    img: "https://placeholder.apptor.studio/200/200/product1.png"
+    img: mykola
   }
 ];
 
