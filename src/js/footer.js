@@ -19,7 +19,6 @@ if(event.target === event.currentTarget){
 }
 
   document.addEventListener('keydown', (event) => {
-    event.preventDefault()
     if (event.key === 'Escape' && !refs.modal.classList.contains('is-hidden')) {
       toggleModal();
     }
